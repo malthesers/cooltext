@@ -1,0 +1,57 @@
+body {
+  background-color: rgb(44, 0, 75);
+  margin: 0;
+}
+
+section {
+  max-width: 1000px;
+  margin: 5rem auto;
+}
+
+#fading-text {
+  font-family: "Ephesis", cursive;
+  font-size: 4.5rem;
+  text-align: center;
+  color: rgb(236, 236, 197);
+  margin: 2rem 0;
+}
+
+#fading-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  background-color: rgb(44, 0, 75);
+  color: rgb(236, 236, 197);
+  border: 2px solid rgb(236, 236, 197);
+  min-width: 12rem;
+  width: 30%;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 1rem;
+  transition-duration: 0.3s;
+}
+
+#fading-button:hover {
+  background-color: rgb(236, 236, 197);
+  color: rgb(44, 0, 75);
+}
+
+.fade {
+  display: inline-block;
+  animation-name: fade;
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(0.46, 0.82, 0.76, 1.25);
+  animation-fill-mode: both;
+}
+
+@keyframes fade {
+  0% {
+    transform: translateY(100%);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
