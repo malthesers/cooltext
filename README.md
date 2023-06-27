@@ -1,1 +1,1 @@
-https://malt9830.github.io/cooltext/
+https://malthesers.github.io/cooltext/
